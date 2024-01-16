@@ -72,7 +72,32 @@ map[num][letter_indx] = "X"
 
 print(f"{line1}\n{line2}\n{line3}")
 ************************************************************************************************************************************************************************************************************
+This code takes heights from an input and outputs total and other information
+# Input a Python list of student heights
+student_heights = input().split()
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+# 🚨 Don't change the code above 👆
+  
+# Write your code below this row 👇
+total = 0
+ 
+# creating a list
+ 
+# Iterate each element in list
+# and add them in variable total
+for ele in range(0, len(student_heights)):
+    total = total + student_heights[ele]
+ 
+# printing total value
+print(f"total height = {total}")
 
+num = len(student_heights)
+
+print(f"number of students = {num}")
+
+Var = total/num
+print(f"average height = {round(Var)}")
 ************************************************************************************************************************************************************************************************************
 
 ************************************************************************************************************************************************************************************************************
